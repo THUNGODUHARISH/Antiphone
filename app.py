@@ -11,7 +11,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 # Homepage
 @app.route("/")
 def home():
-    return send_from_directory(".", "index.html")
+   return send_from_directory(".", "antiphone.html")
 
 # Chat API
 @app.route("/chat", methods=["POST"])
