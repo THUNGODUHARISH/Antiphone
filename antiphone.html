@@ -332,7 +332,7 @@ function showTyping(){
 function hideTyping(){const e=document.getElementById('typi');if(e)e.remove();}
 
 async function callGemini(userMsg) {
-  const res = await fetch("http://127.0.0.1:5000/chat", {
+  const res = await fetch("/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
